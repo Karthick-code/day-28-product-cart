@@ -1,38 +1,109 @@
-.App {
+body{
+  background-color: gainsboro;
+}
+.cart {
+  background-color: darkcyan;
   text-align: center;
+  margin: 20px;
+  font-size: x-large;
+  font-style: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.star {
+  color: rgb(255, 170, 0);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button {
+  margin: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
+  background-color:rgb(249, 255, 224);
+  border: 2px solid black;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+}
+.pricecol{
+  margin-right: 30px;
+}
+
+.removebut {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imgslot {
+  margin: 10px;
+}
+
+.qnty {
+  padding: 10px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.descslot {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  
+}
+
+.title {
+  width: 300px;
+  color: orangered;
+}
+
+.desc {
+  color: darkviolet;
+}
+
+.brand {
+  color: rgb(245, 106, 36);
+}
+
+.stock {
+  color: brown;
+}
+
+.img {
+  margin: 20px;
+  border: 1px solid black;
+  height: 30%;
+}
+
+.rate {
+  text-align: center;
+  margin: 20px;
+  width: 200px;
+}
+.discountslot{
+  display: flex;
+  justify-content: space-around;
+}
+.total{
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.subtot{
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.ship{
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.totdisp{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

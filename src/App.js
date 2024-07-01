@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import { context } from './components/context';
 import './App.css';
+import { Cards } from "./components/Cards";
+import data from "./components/data.json"
 
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="cart">Cart</div>
+      <context.Provider value={data.products}>
+        <div className="cards"> <Cards /></div>
+      </context.Provider>
     </div>
   );
 }
 
+
 export default App;
+
