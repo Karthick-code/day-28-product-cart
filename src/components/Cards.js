@@ -9,7 +9,7 @@ export function Cards() {
     console.log(contextdata);
     // contextdata.map((e)=>console.log(e))
     return (
-        <>Card
+        <>
         <div className="cards">
             {
                 contextdata.map((ele,index)=>{
